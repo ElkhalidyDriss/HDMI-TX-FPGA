@@ -1,0 +1,78 @@
+[
+ {
+  "InstFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v",
+  "InstLine" : 2,
+  "InstName" : "hdmi_test",
+  "ModuleFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v",
+  "ModuleLine" : 2,
+  "ModuleName" : "hdmi_test",
+  "SubInsts" : [
+   {
+    "InstFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v",
+    "InstLine" : 18,
+    "InstName" : "u_pll",
+    "ModuleFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/Gowin_rPLL.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "Gowin_rPLL"
+   },
+   {
+    "InstFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v",
+    "InstLine" : 24,
+    "InstName" : "u_div_5",
+    "ModuleFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/Gowin_CLKDIV.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "Gowin_CLKDIV"
+   },
+   {
+    "InstFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v",
+    "InstLine" : 83,
+    "InstName" : "hdmi_tmds_instance",
+    "ModuleFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_tmds.v",
+    "ModuleLine" : 6,
+    "ModuleName" : "hdmi_tmds",
+    "SubInsts" : [
+     {
+      "InstFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_tmds.v",
+      "InstLine" : 38,
+      "InstName" : "delay_10_taps",
+      "ModuleFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/shift_reg_delay.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "shift_reg_delay"
+     },
+     {
+      "InstFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_tmds.v",
+      "InstLine" : 48,
+      "InstName" : "channel_0_encoder",
+      "ModuleFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/encoder.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "encoder"
+     },
+     {
+      "InstFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_tmds.v",
+      "InstLine" : 62,
+      "InstName" : "channel_1_encoder",
+      "ModuleFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/encoder.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "encoder"
+     },
+     {
+      "InstFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_tmds.v",
+      "InstLine" : 76,
+      "InstName" : "channel_2_encoder",
+      "ModuleFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/encoder.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "encoder"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "InstFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/timing.v",
+  "InstLine" : 4,
+  "InstName" : "timing",
+  "ModuleFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/timing.v",
+  "ModuleLine" : 4,
+  "ModuleName" : "timing"
+ }
+]

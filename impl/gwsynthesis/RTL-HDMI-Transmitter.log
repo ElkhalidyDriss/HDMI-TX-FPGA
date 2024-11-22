@@ -1,0 +1,47 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/Gowin_CLKDIV.v'
+Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/Gowin_rPLL.v'
+Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/encoder.v'
+Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v'
+WARN  (EX2830) : Data object 'red' is already declared("/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v":66)
+Previous declaration of 'red' is from here("/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v":63)
+WARN  (EX3671) : Second declaration of 'red' is ignored("/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v":66)
+WARN  (EX2830) : Data object 'green' is already declared("/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v":66)
+Previous declaration of 'green' is from here("/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v":63)
+WARN  (EX3671) : Second declaration of 'green' is ignored("/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v":66)
+WARN  (EX2830) : Data object 'blue' is already declared("/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v":66)
+Previous declaration of 'blue' is from here("/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v":63)
+WARN  (EX3671) : Second declaration of 'blue' is ignored("/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v":66)
+WARN  (EX3373) : Port 'led' must not be declared to be an array("/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v":9)
+Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_tmds.v'
+Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/shift_reg_delay.v'
+Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/timing.v'
+Compiling module 'hdmi_test'("/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v":2)
+Compiling module 'Gowin_rPLL'("/home/idriss/Projects/RTL-HDMI-Transmitter/src/Gowin_rPLL.v":9)
+Compiling module 'Gowin_CLKDIV'("/home/idriss/Projects/RTL-HDMI-Transmitter/src/Gowin_CLKDIV.v":9)
+Compiling module 'hdmi_tmds'("/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_tmds.v":6)
+Compiling module 'shift_reg_delay'("/home/idriss/Projects/RTL-HDMI-Transmitter/src/shift_reg_delay.v":1)
+Compiling module 'encoder'("/home/idriss/Projects/RTL-HDMI-Transmitter/src/encoder.v":3)
+Compiling module 'encoder(CHANNEL=1)'("/home/idriss/Projects/RTL-HDMI-Transmitter/src/encoder.v":3)
+Compiling module 'encoder(CHANNEL=2)'("/home/idriss/Projects/RTL-HDMI-Transmitter/src/encoder.v":3)
+NOTE  (EX0101) : Current top module is "hdmi_test"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "/home/idriss/Projects/RTL-HDMI-Transmitter/impl/gwsynthesis/RTL-HDMI-Transmitter.vg" completed
+[100%] Generate report file "/home/idriss/Projects/RTL-HDMI-Transmitter/impl/gwsynthesis/RTL-HDMI-Transmitter_syn.rpt.html" completed
+GowinSynthesis finish

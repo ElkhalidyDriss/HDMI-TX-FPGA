@@ -1,0 +1,41 @@
+{
+ "Device" : "GW1NR-9C",
+ "Files" : [
+  {
+   "Path" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/Gowin_CLKDIV.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/Gowin_rPLL.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/encoder.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_tmds.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/shift_reg_delay.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/timing.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2001,
+ "ResultFile" : "/home/idriss/Projects/RTL-HDMI-Transmitter/impl/temp/rtl_parser.result",
+ "Top" : "hdmi_test",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

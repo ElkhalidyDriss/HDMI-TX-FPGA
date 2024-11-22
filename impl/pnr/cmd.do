@@ -1,0 +1,13 @@
+-d /home/idriss/Projects/RTL-HDMI-Transmitter/impl/gwsynthesis/RTL-HDMI-Transmitter.vg
+-p GW1NR-9C-QFN88P-6
+-pn GW1NR-LV9QN88PC6/I5
+-cst /home/idriss/Projects/RTL-HDMI-Transmitter/src/RTL-HDMI-Transmitter.cst
+-cfg /home/idriss/Projects/RTL-HDMI-Transmitter/impl/pnr/device.cfg
+-sdc /home/idriss/Projects/RTL-HDMI-Transmitter/src/RTL-HDMI-Transmitter.sdc
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-correct_hold 1
+-route_maxfan 23

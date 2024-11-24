@@ -8,10 +8,12 @@
         <File path="src/Gowin_CLKDIV.v" type="file.verilog" enable="1"/>
         <File path="src/Gowin_rPLL.v" type="file.verilog" enable="1"/>
         <File path="src/encoder.v" type="file.verilog" enable="1"/>
+        <File path="src/fonts.v" type="file.verilog" enable="1"/>
         <File path="src/hdmi_test.v" type="file.verilog" enable="1"/>
         <File path="src/hdmi_tmds.v" type="file.verilog" enable="1"/>
         <File path="src/shift_reg_delay.v" type="file.verilog" enable="1"/>
         <File path="src/timing.v" type="file.verilog" enable="1"/>
+        <File path="src/video_generator.v" type="file.verilog" enable="1"/>
         <File path="src/RTL-HDMI-Transmitter.cst" type="file.cst" enable="1"/>
         <File path="src/RTL-HDMI-Transmitter.sdc" type="file.sdc" enable="1"/>
     </FileList>

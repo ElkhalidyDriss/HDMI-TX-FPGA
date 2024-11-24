@@ -12,27 +12,27 @@
   <Part Number>: GW1NR-LV9QN88PC6/I5
   <Device>: GW1NR-9
   <Device Version>: C
-  <Created Time>:Thu Nov 21 23:43:18 2024
+  <Created Time>:Sat Nov 23 23:58:59 2024
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.868s, Elapsed time = 0h 0m 0.861s
-    Placement Phase 1: CPU time = 0h 0m 0.041s, Elapsed time = 0h 0m 0.039s
-    Placement Phase 2: CPU time = 0h 0m 0.183s, Elapsed time = 0h 0m 0.179s
+    Placement Phase 0: CPU time = 0h 0m 0.797s, Elapsed time = 0h 0m 0.792s
+    Placement Phase 1: CPU time = 0h 0m 0.033s, Elapsed time = 0h 0m 0.031s
+    Placement Phase 2: CPU time = 0h 0m 0.208s, Elapsed time = 0h 0m 0.205s
     Placement Phase 3: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
     Total Placement: CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s
  Running routing:
     Routing Phase 0: CPU time = 0h 0m 0.001s, Elapsed time = 0h 0m 0.001s
-    Routing Phase 1: CPU time = 0h 0m 0.921s, Elapsed time = 0h 0m 0.916s
+    Routing Phase 1: CPU time = 0h 0m 0.839s, Elapsed time = 0h 0m 0.835s
     Routing Phase 2: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
     Total Routing: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
  Generate output files:
     CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
 
- Total Time and Memory Usage: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s, Peak memory usage = 292MB
+ Total Time and Memory Usage: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s, Peak memory usage = 573MB
 
 
 3. Resource Usage Summary
@@ -40,24 +40,23 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 583/8640  7%
-    --LUT,ALU,ROM16           | 583(354 LUT, 229 ALU, 0 ROM16)
+  Logic                       | 579/8640  7%
+    --LUT,ALU,ROM16           | 579(376 LUT, 203 ALU, 0 ROM16)
     --SSRAM(RAM16)            | 0
-  Register                    | 228/6693  4%
+  Register                    | 229/6693  4%
     --Logic Register as Latch | 0/6480  0%
-    --Logic Register as FF    | 228/6480  4%
+    --Logic Register as FF    | 229/6480  4%
     --I/O Register as Latch   | 0/213  0%
     --I/O Register as FF      | 0/213  0%
-  CLS                         | 360/4320  9%
-  I/O Port                    | 14
-  I/O Buf                     | 10
+  CLS                         | 388/4320  9%
+  I/O Port                    | 10
+  I/O Buf                     | 6
     --Input Buf               | 2
-    --Output Buf              | 8
+    --Output Buf              | 4
     --Inout Buf               | 0
   IOLOGIC                     | 7%
     --OSER10                  | 3
-  BSRAM                       | 4%
-    --SP                      | 1
+  BSRAM                       | 0%
   DSP                         | 0%
   PLL                         | 1/2  50%
   DCS                         | 0/8  0%
@@ -79,7 +78,7 @@
   -----------------------
   bank 1   | 9/25(36%)   
   bank 2   | 0/23(0%)    
-  bank 3   | 5/23(21%)   
+  bank 3   | 1/23(4%)    
   =======================
 
 
@@ -90,7 +89,7 @@
   -------------------------------
   PRIMARY       | 1/8(13%)
   LW            | 1/8(13%)
-  GCLK_PIN      | 2/3(67%)
+  GCLK_PIN      | 1/3(34%)
   PLL           | 1/2(50%)
   CLKDIV        | 1/8(13%)
   DLLDLY        | 0/8(0%)
@@ -103,7 +102,7 @@
   Signal         | Global Clock   | Location
   -------------------------------------------
   pixel_clk      | PRIMARY        |  TR TL BR BL
-  led_d_0_4      | LW             |  -
+  reset_n_d      | LW             |  -
   sys_clk_d      | HCLK           | BOTTOM[0]
   clk_x5         | HCLK           | TOP[0]
   ===========================================
@@ -120,10 +119,6 @@ tmds_d_p[0]  | tmds_d_n[0] | 71,70/1       | Y          | out   | IOT41    | LVC
 tmds_d_p[1]  | tmds_d_n[1] | 73,72/1       | Y          | out   | IOT39    | LVCMOS33D  | 8     | NONE      | NA        | NA         | NA         | NA         | OFF             | NA            | 3.3       
 tmds_d_p[2]  | tmds_d_n[2] | 75,74/1       | Y          | out   | IOT38    | LVCMOS33D  | 8     | NONE      | NA        | NA         | NA         | NA         | OFF             | NA            | 3.3       
 tmds_clk_p   | tmds_clk_n | 69,68/1       | Y          | out   | IOT42    | LVCMOS33D  | 8     | NONE      | NA        | NA         | NA         | NA         | OFF             | NA            | 3.3       
-led[0]       |           | 10/3          | Y          | out   | IOL15[A] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
-led[1]       |           | 11/3          | Y          | out   | IOL16[B] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
-led[2]       |           | 13/3          | Y          | out   | IOL21[B] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
-led[3]       |           | 14/3          | Y          | out   | IOL22[B] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8       
 ====================================================================================================================================================================================================================
 
 
@@ -186,10 +181,10 @@ Loc./Bank| Signal       | Dir.  | Site     | IO Type  | Drive | Pull Mode | PCI 
 7/3      | -            | in    | IOL12[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 8/3      | -            | out   | IOL13[A] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | NA              | NA            | 1.8  
 9/3      | -            | in    | IOL13[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
-10/3     | led[0]       | out   | IOL15[A] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
-11/3     | led[1]       | out   | IOL16[B] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
-13/3     | led[2]       | out   | IOL21[B] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
-14/3     | led[3]       | out   | IOL22[B] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | NA         | OFF             | NA            | 1.8  
+10/3     | -            | in    | IOL15[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+11/3     | -            | in    | IOL16[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+13/3     | -            | in    | IOL21[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
+14/3     | -            | in    | IOL22[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 15/3     | -            | in    | IOL25[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 16/3     | -            | in    | IOL26[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA         | NA              | NA            | 1.8  
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="hdmi_test" Register="49" Alu="8" Lut="71">
+<Module name="hdmi_test">
  <SubModule name="u_pll"/>
  <SubModule name="u_div_5"/>
+ <SubModule name="timing_controller" Register="23" Lut="42"/>
+ <SubModule name="video_generator_instance" Register="29" Lut="174">
+  <SubModule name="fonts_memory" Lut="18"/>
+ </SubModule>
  <SubModule name="hdmi_tmds_instance" Register="1">
-  <SubModule name="delay_10_taps" Register="41" Lut="45" Bsram="1"/>
-  <SubModule name="channel_0_encoder" Register="48" Alu="49" Lut="81"/>
-  <SubModule name="channel_1_encoder" Register="45" Alu="49" Lut="80"/>
-  <SubModule name="channel_2_encoder" Register="44" Alu="49" Lut="77"/>
+  <SubModule name="delay_10_taps" Register="77"/>
+  <SubModule name="channel_0_encoder" Register="40" Alu="52" Lut="53"/>
+  <SubModule name="channel_1_encoder" Register="30" Alu="36" Lut="47"/>
+  <SubModule name="channel_2_encoder" Register="29" Alu="39" Lut="43"/>
  </SubModule>
 </Module>

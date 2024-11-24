@@ -14,6 +14,10 @@
    "Type" : "verilog"
   },
   {
+   "Path" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/fonts.v",
+   "Type" : "verilog"
+  },
+  {
    "Path" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v",
    "Type" : "verilog"
   },
@@ -31,10 +35,6 @@
   },
   {
    "Path" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/video_generator.v",
-   "Type" : "verilog"
-  },
-  {
-   "Path" : "/home/idriss/Projects/RTL-HDMI-Transmitter/src/fonts.v",
    "Type" : "verilog"
   }
  ],

@@ -17,14 +17,14 @@ The HDMI transmission system consists of three channels (Channel 0, Channel 1, a
 - **Control Data (2b/10b encoding)**: This data includes synchronization and control signals like Horizontal Sync (Hsync), Vertical Sync (Vsync), and other control flags.
 
 The parallel data from each encoder is serialized using a serializer before being transmitted over the HDMI interface. The control signals `vde` (Video Data Enable) and `ade` (Auxiliary Data Enable) determine which type of data is active at any given moment (video data, auxiliary data, or control data).
-
+[!TMDS channel architecture.](./Docs/TMDS_Channel.svg)
 ### Data Breakdown for Each Channel
 
 | **Channel** | **Pixel Component** | **Auxiliary Data** | **Control Data** |
 |-------------|---------------------|--------------------|------------------|
 | **Channel 0** | Blue              | Packet header (e.g., Audio, or extended information) | Hsync, Vsync |
-| **Channel 1** | Green (for Channel 1) | Packet header (e.g., Audio, or extended information) | Control signals: C0, C1, Hsync, Vsync |
-| **Channel 2** | Red (for Channel 2) | Packet header (e.g., Audio, or extended information) | Control signals: C0, C1, Hsync, Vsync |
+| **Channel 1** | Green (for Channel 1) |  Audio Sample, or extended information | CTL0, CTL1|
+| **Channel 2** | Red (for Channel 2) | e.g., Audio Sample, or extended information | CTL2, CTL3|
 
 ### Control Signals
 - **vde (Video Data Enable)**: Indicates that video data should be transmitted on the channel.

@@ -122,10 +122,8 @@ Then opload the demo to your FPGA.
    openFPGALoader -b tangnano9k RTL-HDMI-Transmitter.fs
    ```
 ## Demo 
-<video width="640" height="360" controls>
-  <source src="/Docs/Demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[Click here to watch the demo](Docs/Demo.mp4)
+
 
 ## Future Work
 - Porting the RTL to another FPGA platforms (easy because I used only two platform dependent IP cores (serializer and LVDS IOBUF other code is pure Verilog)).

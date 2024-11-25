@@ -21,11 +21,13 @@ The data for each channel is encoded using different encoding schemes as follows
 The parallel data from each encoder is serialized using a serializer before being transmitted over the HDMI interface. The control signals `vde` (Video Data Enable) and `ade` (Auxiliary Data Enable) determine which type of data is being transmitted at any given moment (video data, auxiliary data, or control data).
 - **vde (Video Data Enable)**: Indicates that video data should be transmitted on the channel.
 - **ade (Auxiliary Data Enable)**: Indicates that auxiliary data should be transmitted on the channel.
-| **vde** | **ade** | **Data period** |
-|-----|-----|---------------------|
-|  0  |  0  | Control Period      |
-|  0  |  1  | Auxilary data period|
-|  1  |  0  | Video Data period   |
+
+| **vde** | **ade** | **Data Period**         |
+|---------|---------|-------------------------|
+|    0    |    0    | Control Period          |
+|    0    |    1    | Auxiliary Data Period   |
+|    1    |    0    | Video Data Period       |
+
 ![TMDS channel architecture.](./Docs/TMDS_Channel.svg)
 
 | **Channel** | **Pixel Component** | **Auxiliary Data** | **Control Data** |

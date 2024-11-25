@@ -81,9 +81,15 @@ end
                     if (pixels[pixel_x] == 1'b1)
                         {red,green,blue} <= CHARACTER_COLOR; 
                      else 
-                         {red,green,blue} <=  (toggle_screen == 1) ? BACKGROUND_COLOR : 24'hfa9d11;
+                         if (counterX > 320)
+                             {red,green,blue} <=  (toggle_screen == 1) ? BACKGROUND_COLOR : 24'hfa9d11;
+                         else 
+                             {red,green,blue} <=  (toggle_screen == 1) ? 24'hfa9d11  : BACKGROUND_COLOR;
                  end else begin
-                         {red,green,blue} <=  (toggle_screen == 1) ? BACKGROUND_COLOR : 24'hfa9d11; 
+                         if (counterX > 320)
+                             {red,green,blue} <=  (toggle_screen == 1) ? BACKGROUND_COLOR : 24'hfa9d11;
+                         else 
+                             {red,green,blue} <=  (toggle_screen == 1) ? 24'hfa9d11  : BACKGROUND_COLOR;
                  end    
               end 
  

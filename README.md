@@ -54,6 +54,7 @@ Each channel transmits a specific pixel component, auxiliary data, or control da
 ## Hardware
 - **Board**: Sipeed Tang Nano 9k .
 - **FPGA**: Gowin FPGA (GW1NR-9C)
+## Design details (Soon) 
 ## Project Structure
 ```
 ├── Docs
@@ -105,9 +106,29 @@ Each channel transmits a specific pixel component, auxiliary data, or control da
     ├── timing.v
     └── video_generator.v
 ```
-## Usage
-- **Programming the FPGA**:
-## Testing on FPGA
+## Uploading the bitstream to FPGA
+If you're using a Linux machine and encounter issues loading the bitstream to the FPGA through the GowinEDA programmer (which works well on Windows), you can use the `openFPGALoader` utility. It supports the Tang Nano 9K FPGA and provides an alternative solution.
+For Linux Manjaro, you can install `openFPGALoader` using the following command:  
+```bash
+sudo pacman -S openfpgaloader
+```
+Then opload the demo to your FPGA.
+1. **Navigate to the `impl/pnr` directory**:  
+   Open a terminal and move to the directory where the design files are located:
+   ```bash
+   cd impl/pnr
+   ```
+   ```bash
+   openFPGALoader -b tangnano9k RTL-HDMI-Transmitter.fs
+   ```
+## Demo 
+<video width="640" height="360" controls>
+  <source src="/Docs/Demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Future Work
-Future work will focus on implementing a simple Graphics Processing Unit (GPU) to render graphics to the HDMI port and completing the audio handling functionality to enhance the system's multimedia capabilities. Additionally, I plan to work on creating detailed documentation to ensure better usability and understanding of the project.
+- Porting the RTL to another FPGA platforms (easy because I used only two platform dependent IP cores (serializer and LVDS IOBUF other code is pure Verilog)).
+- Implement a simple Graphics Processing Unit (GPU) to render graphics to the HDMI port.  
+- Complete the audio handling functionality to enhance the system's multimedia capabilities.  
+- Create detailed documentation to improve usability and understanding of the project.

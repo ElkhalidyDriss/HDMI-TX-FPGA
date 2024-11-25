@@ -2,9 +2,9 @@
 <Module name="hdmi_test">
  <SubModule name="u_pll"/>
  <SubModule name="u_div_5"/>
- <SubModule name="timing_controller" Register="23" Lut="42"/>
- <SubModule name="video_generator_instance" Register="29" Lut="174">
-  <SubModule name="fonts_memory" Lut="18"/>
+ <SubModule name="timing_controller" Register="23" Lut="40"/>
+ <SubModule name="video_generator_instance" Register="29" Lut="181">
+  <SubModule name="fonts_memory" Lut="19"/>
  </SubModule>
  <SubModule name="hdmi_tmds_instance" Register="1">
   <SubModule name="delay_10_taps" Register="77"/>

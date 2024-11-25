@@ -12,27 +12,27 @@
   <Part Number>: GW1NR-LV9QN88PC6/I5
   <Device>: GW1NR-9
   <Device Version>: C
-  <Created Time>:Sat Nov 23 23:58:59 2024
+  <Created Time>:Sun Nov 24 19:11:15 2024
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.797s, Elapsed time = 0h 0m 0.792s
-    Placement Phase 1: CPU time = 0h 0m 0.033s, Elapsed time = 0h 0m 0.031s
-    Placement Phase 2: CPU time = 0h 0m 0.208s, Elapsed time = 0h 0m 0.205s
+    Placement Phase 0: CPU time = 0h 0m 0.848s, Elapsed time = 0h 0m 0.876s
+    Placement Phase 1: CPU time = 0h 0m 0.034s, Elapsed time = 0h 0m 0.034s
+    Placement Phase 2: CPU time = 0h 0m 0.219s, Elapsed time = 0h 0m 0.223s
     Placement Phase 3: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s
     Total Placement: CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s
  Running routing:
     Routing Phase 0: CPU time = 0h 0m 0.001s, Elapsed time = 0h 0m 0.001s
-    Routing Phase 1: CPU time = 0h 0m 0.839s, Elapsed time = 0h 0m 0.835s
+    Routing Phase 1: CPU time = 0h 0m 0.977s, Elapsed time = 0h 0m 0.988s
     Routing Phase 2: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
     Routing Phase 3: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
     Total Routing: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
  Generate output files:
     CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
 
- Total Time and Memory Usage: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 8s, Peak memory usage = 573MB
+ Total Time and Memory Usage: CPU time = 0h 0m 8s, Elapsed time = 0h 0m 9s, Peak memory usage = 289MB
 
 
 3. Resource Usage Summary

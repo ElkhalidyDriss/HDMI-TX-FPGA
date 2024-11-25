@@ -3,12 +3,12 @@ Running parser ...
 Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/Gowin_CLKDIV.v'
 Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/Gowin_rPLL.v'
 Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/encoder.v'
+Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/fonts.v'
 Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v'
 Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_tmds.v'
 Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/shift_reg_delay.v'
 Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/timing.v'
 Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/video_generator.v'
-Analyzing Verilog file '/home/idriss/Projects/RTL-HDMI-Transmitter/src/fonts.v'
 Compiling module 'hdmi_test'("/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v":15)
 Compiling module 'Gowin_rPLL'("/home/idriss/Projects/RTL-HDMI-Transmitter/src/Gowin_rPLL.v":7)
 Compiling module 'Gowin_CLKDIV'("/home/idriss/Projects/RTL-HDMI-Transmitter/src/Gowin_CLKDIV.v":9)

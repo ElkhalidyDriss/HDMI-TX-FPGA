@@ -9,17 +9,24 @@ For additional details, refer to the [HDMI 1.3 Specification](https://www.hdmi.o
 ![HDMI Transmitter link architecture.](./Docs/hdmi_architecture_overview.png)
 
 ## HDMI Transmitter architecture 
+The HDMI transmission system consists of three channels (Channel 0, Channel 1, and Channel 2), each responsible for transmitting different types of data over the HDMI link. 
+![HDMI Transmitter.](./Docs/HDMI_TX_architecture.svg)
 
-The HDMI transmission system consists of three channels (Channel 0, Channel 1, and Channel 2), each responsible for transmitting different types of data over the HDMI link. The data for each channel is encoded using different encoding schemes as follows:
+The data for each channel is encoded using different encoding schemes as follows:
 
 - **Pixel Data (8b/10b encoding)**: This data represents the video content transmitted over HDMI.
 - **Auxiliary Data (4b/10b encoding)**: This data supports auxiliary functions like audio or additional information.
 - **Control Data (2b/10b encoding)**: This data includes synchronization and control signals like Horizontal Sync (Hsync), Vertical Sync (Vsync), and other control flags.
 
-The parallel data from each encoder is serialized using a serializer before being transmitted over the HDMI interface. The control signals `vde` (Video Data Enable) and `ade` (Auxiliary Data Enable) determine which type of data is active at any given moment (video data, auxiliary data, or control data).
+The parallel data from each encoder is serialized using a serializer before being transmitted over the HDMI interface. The control signals `vde` (Video Data Enable) and `ade` (Auxiliary Data Enable) determine which type of data is being transmitted at any given moment (video data, auxiliary data, or control data).
+- **vde (Video Data Enable)**: Indicates that video data should be transmitted on the channel.
+- **ade (Auxiliary Data Enable)**: Indicates that auxiliary data should be transmitted on the channel.
+| **vde** | **ade** | **Data period** |
+|-----|-----|---------------------|
+|  0  |  0  | Control Period      |
+|  0  |  1  | Auxilary data period|
+|  1  |  0  | Video Data period   |
 ![TMDS channel architecture.](./Docs/TMDS_Channel.svg)
-
-### Data Breakdown for Each Channel
 
 | **Channel** | **Pixel Component** | **Auxiliary Data** | **Control Data** |
 |-------------|---------------------|--------------------|------------------|
@@ -27,9 +34,6 @@ The parallel data from each encoder is serialized using a serializer before bein
 | **Channel 1** | Green (for Channel 1) |  Audio Sample, or extended information | CTL0, CTL1|
 | **Channel 2** | Red (for Channel 2) | e.g., Audio Sample, or extended information | CTL2, CTL3|
 
-### Control Signals
-- **vde (Video Data Enable)**: Indicates that video data should be transmitted on the channel.
-- **ade (Auxiliary Data Enable)**: Indicates that auxiliary data should be transmitted on the channel.
 
  
 

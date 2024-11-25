@@ -7,12 +7,12 @@
         <File path="/home/idriss/Projects/RTL-HDMI-Transmitter/src/Gowin_CLKDIV.v" type="verilog"/>
         <File path="/home/idriss/Projects/RTL-HDMI-Transmitter/src/Gowin_rPLL.v" type="verilog"/>
         <File path="/home/idriss/Projects/RTL-HDMI-Transmitter/src/encoder.v" type="verilog"/>
+        <File path="/home/idriss/Projects/RTL-HDMI-Transmitter/src/fonts.v" type="verilog"/>
         <File path="/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_test.v" type="verilog"/>
         <File path="/home/idriss/Projects/RTL-HDMI-Transmitter/src/hdmi_tmds.v" type="verilog"/>
         <File path="/home/idriss/Projects/RTL-HDMI-Transmitter/src/shift_reg_delay.v" type="verilog"/>
         <File path="/home/idriss/Projects/RTL-HDMI-Transmitter/src/timing.v" type="verilog"/>
         <File path="/home/idriss/Projects/RTL-HDMI-Transmitter/src/video_generator.v" type="verilog"/>
-        <File path="/home/idriss/Projects/RTL-HDMI-Transmitter/src/fonts.v" type="verilog"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>
